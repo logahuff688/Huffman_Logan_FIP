@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.box-color {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  margin: 0;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,
+p,
+body,
+header,
+footer,
+section,
+article,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none; /*Remove border if image is a link*/
+  margin: 0;
+  padding: 0;
+}
+
+/*html selectors*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* Remove underlines from links */
+
+a {
+  text-decoration: none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+  display: none;
+}
+
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 428px.
+428px would fit some phones. Sizes will vary depending on the projects
+you work on and the intended audience, we may go as low as 320px */
+
+#container {
+  margin: 0 auto;
+  width: 428px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-column-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header-con {
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#header-logo {
+  grid-column: 1/3;
+  width: 250px;
+}
+
+.mobile-nav {
+  grid-column: 4/-1;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.mobile-nav #myLinks {
+  display: none;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+.mobile-nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobile-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.burger {
+  height: 16px;
+  background-color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* index page */
+
+#hero-con {
+  background-color: #aaaaaa;
+  background: url("https://via.placeholder.com/428x458");
+  height: 458px;
+}
+
+#hero-text {
+  grid-column: 1/-1;
+  text-shadow: 12px 12px 12px black;
+  box-shadow: 12px 12px 12px black;
+  /* Remove as content will dictate height */
+  height: 445px;
+  background-image: url(https://media.istockphoto.com/photos/right-lane-of-a-freshly-paved-asphalt-road-diminishing-perspective-picture-id89898451?k=20&m=89898451&s=612x612&w=0&h=xhbYv5Sb6EgkCSWgSalFAi-kqVDp2PNw3sybADrm4Os=);
+  background-repeat: no-repeat;
+  background-size: 950px 800px;
+  font-size: xx-large;
+  filter: blur(1px);
+}
+
+#image-slider-con {
+  background-color: black;
+  /* Remove as content will dictate height */
+  height: 640px;
+  position: relative;
+}
+
+#image-slider-con h2 {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+#mobile-slider-left {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  font-size: 120px;
+  color: #fff;
+  top: 200px;
+  transition: 0.5s;
+}
+
+#mobile-slider-right {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  font-size: 120px;
+  color: #fff;
+  top: 200px;
+  transition: 0.5s;
+}
+
+#mobile-slider-left:hover {
+  transition: 0.5s;
+  font-size: 130px;
+  text-shadow: 5px 8px 5px white;
+}
+
+#mobile-slider-right:hover {
+  transition: 0.5s;
+  font-size: 130px;
+  text-shadow: 5px 8px 5px white;
+
+}
+
+#about-us-con h2 {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+#about-us-text-con {
+  background-color: #dddddd;
+}
+
+#about-us-text {
+  grid-column: 1/12;
+  /* Remove as content will dictate height */
+  height: 740px;
+  background-image: url("/img/tree_branch.JPG");
+  background-repeat: no-repeat;
+  background-size: 1501px 740px;
+  text-shadow: 24px 24px 24px black;
+  box-shadow: 12px 12px 12px black;
+  font-size: larger;
+}
+
+.about-us-photo {
+  grid-column: 1/-1;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+#contact-us-con {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+#contact-text {
+  grid-column: 1/-1;
+  /* Remove as content will dictate height */
+  height: 350px;
+  margin-bottom: 150px;
+  box-shadow: 1px 2px 3px black;
+}
+
+#contact-form {
+  grid-column: 1/-1;
+  /* Remove as content will dictate height */
+  height: 580px;
+  box-shadow: 1px 2px 3px black;
+}
+
+#InputButton {
+  box-shadow: 1px 2px 3px black;
+  cursor: pointer;
+}
+
+/*Common page elements  */
+
+#footer-con {
+  height: 410px;
+  background-color: #aaa;
+}
+
+#footer-box {
+  margin-top: 40px;
+  /* Remove as content will dictate height */
+  height: 45px;
+  grid-column: 1/3;
+  background-color: black;
+  box-shadow: 1px 2px 3px black;
+}
+
+#footer-newsletter {
+  margin-top: 100px;
+  /* Remove as content will dictate height */
+  height: 100px;
+  grid-column: 1/-1;
+  background-color: #ddd;
+  box-shadow: 1px 2px 3px black;
+}
+
+/* gallery page */
+
+#hero-gallery-con {
+  background-color: #aaaaaa;
+  background: url("https://via.placeholder.com/428x458");
+  height: 458px;
+}
+
+#hero-gallery-text {
+  grid-column: 1/-1;
+  /* Remove as content will dictate height */
+  height: 350px;
+  margin-top: 20px;
+}
+
+#gallery-controls {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dot {
+  background-color: #dddddd;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#gallery h2 {
+  text-align: center;
+  grid-column: 1/-1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.gallery-box {
+  grid-column: 1/-1;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.GalleryImages {
+  width: fit-content;
+  height: 355px;
+}
+
+.Towns {
+  padding-left: 160px;
+}
+
+#SignSlides {
+  transition: 0.5s;
+  padding-left: 108px;
+  width: 50%;
+}
+
+#SignSlides:hover {
+  transition: 0.5s;
+  padding-left: 100px;
+  width: 55%;
+}
+
+#footer-newsletter2 {
+  margin-top: 20px;
+  height: 40px;
+  grid-column: 1/3;
+  background-color: #ddd;
+}
+
+#NewsletterEmail {
+  height: 56px;
+  width: 361px;
+}
+
+#NewsletterSubmitButton {
+  cursor: pointer;
+  box-shadow: 1px 2px 3px black;
+}
+
+#TwitterFooter {
+  position: static;
+  width: 45px;
+}
+
+#TwitterFooter:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#FacebookFooter {
+  position: static;
+  width: 45px;
+}
+
+#FacebookFooter:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#InstagramFooter {
+  position: static;
+  width: 45px;
+  right: 8%;
+}
+
+#InstagramFooter:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#TwitterHeader {
+  position: static;
+  width: 45px;
+}
+
+#TwitterHeader:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#FacebookHeader {
+  position: static;
+  width: 45px;
+}
+
+#FacebookHeader:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#InstagramHeader {
+  position: static;
+  width: 45px;
+  right: 8%;
+}
+
+#InstagramHeader:hover {
+  box-shadow: 3px 3px 3px black;
+  transition: 0.5s;
+}
+
+#AboutUs {
+  font-size: x-large;
+}
