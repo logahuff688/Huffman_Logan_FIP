@@ -99,6 +99,10 @@ you work on and the intended audience */
   display: inline;
 }
 
+#footer-nav ul li {
+  display: inline;
+}
+
 #header-box2 {
   grid-column: 11/-1;
   /* Remove as content will dictate height */
