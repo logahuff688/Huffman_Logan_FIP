@@ -80,7 +80,7 @@ you work on and the intended audience, we may go as low as 320px */
 
 #header-logo {
   grid-column: 1/3;
-  width: 250px;
+  width: 180px;
 }
 
 .mobile-nav {
