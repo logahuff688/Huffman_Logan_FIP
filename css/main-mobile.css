@@ -136,7 +136,7 @@ you work on and the intended audience, we may go as low as 320px */
   box-shadow: 12px 12px 12px black;
   /* Remove as content will dictate height */
   height: 445px;
-  background-image: url(https://media.istockphoto.com/photos/right-lane-of-a-freshly-paved-asphalt-road-diminishing-perspective-picture-id89898451?k=20&m=89898451&s=612x612&w=0&h=xhbYv5Sb6EgkCSWgSalFAi-kqVDp2PNw3sybADrm4Os=);
+  background-image: url("../img/road.jpg");
   background-repeat: no-repeat;
   background-size: 950px 800px;
   font-size: xx-large;
@@ -188,7 +188,6 @@ you work on and the intended audience, we may go as low as 320px */
   transition: 0.5s;
   font-size: 130px;
   text-shadow: 5px 8px 5px white;
-
 }
 
 #about-us-con h2 {
