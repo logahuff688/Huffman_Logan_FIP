@@ -206,7 +206,7 @@ you work on and the intended audience, we may go as low as 320px */
   grid-column: 1/12;
   /* Remove as content will dictate height */
   height: 740px;
-  background-image: url("/img/tree_branch.JPG");
+  background-image: url("../img/tree_branch.JPG");
   background-repeat: no-repeat;
   background-size: 1501px 740px;
   text-shadow: 24px 24px 24px black;
